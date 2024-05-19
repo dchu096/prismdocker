@@ -26,7 +26,7 @@ echo "  / __  / /_/ (__  ) /_/ / / / / /_/ / _, _/  __/ / / / / / /_/ / /_/ /  _
 echo " /_/ /_/\____/____/\__/_/_/ /_/\__, /_/ |_|\___/_/ /_/ /_/\__,_/\__,_/\___/  "
 echo "                              /____/                                         "
 echo -e "========================================================================================================"
-echo -e "${CYAN}Welcome to Gravel Host! If you have any issues don't hesitate to contact us on discord at discord.gg/gravelhost ${RESET_COLOR}"
+echo -e "${CYAN}Welcome to Gravel Host! If you have any issues don't hesitate to contact us on discord at discord.hostingremade.com ${RESET_COLOR}"
 echo -e "========================================================================================================"
 eval ${MODIFIED_STARTUP}
 
