@@ -62,4 +62,4 @@ jobs:
           platforms: linux/amd64, linux/arm64
           push: true
           tags: |
-            ghcr.io/dchu096/gh-images:java_${{ matrix.tag }}
+            ghcr.io/hostingremade/docker:java_${{ matrix.tag }}
