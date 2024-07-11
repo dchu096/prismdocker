@@ -2,7 +2,7 @@
 cd /home/container || exit 1
 
 # Configure colors
-CYAN='\033[0;36m'
+LBLUE='\033[38;5;39m'
 RESET_COLOR='\033[0m'
 
 # Print Current Java Version
@@ -29,6 +29,6 @@ cat << 'EOF'
 EOF
 
 echo -e "========================================================================================================"
-echo -e "${CYAN}Welcome to HR! If you have any issues don't hesitate to contact us on discord at discord.hostingremade.com ${RESET_COLOR}"
+echo -e "${LBLUE}Welcome to HR! If you have any issues don't hesitate to contact us on discord at dsc.gg/hostingremade ${RESET_COLOR}"
 echo -e "========================================================================================================"
 eval "${MODIFIED_STARTUP}"
