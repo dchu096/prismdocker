@@ -20,7 +20,7 @@ echo -e "STARTUP /home/container: ${MODIFIED_STARTUP}"
 
 # Download the latest MCAntiMalware.jar
 echo -e "${LOG_PREFIX} Downloading the latest MCAntiMalware..."
-curl -L -o /MCAntiMalware.jar https://github.com/OpticFusion1/MCAntiMalware/releases/latest/download/MCAntiMalware.jar
+curl -L -o ./MCAntiMalware.jar https://github.com/OpticFusion1/MCAntiMalware/releases/latest/download/MCAntiMalware.jar
 
 if [ $? -eq 0 ]; then
     echo -e "${LOG_PREFIX} MCAntiMalware.jar downloaded successfully."
