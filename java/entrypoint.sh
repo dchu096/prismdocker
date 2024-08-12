@@ -4,6 +4,7 @@ cd /home/container || exit 1
 # Configure colors
 LBLUE='\033[38;5;39m'
 RESET_COLOR='\033[0m'
+LOG_PREFIX="[MALWARE SCAN]"
 
 # Print Current Java Version
 java -version
@@ -16,6 +17,32 @@ export INTERNAL_IP
 # shellcheck disable=SC2086
 MODIFIED_STARTUP=$(echo -e "${STARTUP}" | sed -e 's/{{/${/g' -e 's/}}/}/g')
 echo -e "STARTUP /home/container: ${MODIFIED_STARTUP}"
+
+# Download the latest MCAntiMalware.jar
+echo -e "${LOG_PREFIX} Downloading the latest MCAntiMalware..."
+curl -L -o /MCAntiMalware.jar https://github.com/OpticFusion1/MCAntiMalware/releases/latest/download/MCAntiMalware.jar
+
+if [ $? -eq 0 ]; then
+    echo -e "${LOG_PREFIX} MCAntiMalware.jar downloaded successfully."
+else
+    echo -e "${LOG_PREFIX} Failed to download MCAntiMalware.jar. Exiting..."
+    exit 1
+fi
+
+# Run Malware Scan
+echo -e "${LOG_PREFIX} Scanning for malware... (This may take a while)"
+java -jar /MCAntiMalware.jar --scanDirectory . --singleScan true --disableAutoUpdate true
+
+if [ $? -eq 0 ]; then
+    echo -e "${LOG_PREFIX} Malware scan has passed"
+else
+    echo -e "${LOG_PREFIX} Malware scan has failed"
+    exit 1
+fi
+
+# Delete the MCAntiMalware.jar file
+rm /MCAntiMalware.jar
+echo -e "${LOG_PREFIX} MCAntiMalware.jar has been deleted."
 
 # Run the Server
 # shellcheck disable=SC2086
