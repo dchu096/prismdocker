@@ -31,7 +31,7 @@ fi
 
 # Run Malware Scan
 echo -e "${LOG_PREFIX} Scanning for malware... (This may take a while)"
-java -jar /MCAntiMalware.jar --scanDirectory . --singleScan true --disableAutoUpdate true
+java -jar ./MCAntiMalware.jar --scanDirectory . --singleScan true --disableAutoUpdate true
 
 if [ $? -eq 0 ]; then
     echo -e "${LOG_PREFIX} Malware scan has passed"
@@ -41,7 +41,7 @@ else
 fi
 
 # Delete the MCAntiMalware.jar file
-rm /MCAntiMalware.jar
+rm ./MCAntiMalware.jar
 echo -e "${LOG_PREFIX} MCAntiMalware.jar has been deleted."
 
 # Run the Server
