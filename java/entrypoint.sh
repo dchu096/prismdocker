@@ -3,6 +3,7 @@ cd /home/container || exit 1
 
 # Configure colors
 LBLUE='\033[38;5;39m'
+HALLOWEEN='\033[38;5;202m'
 RESET_COLOR='\033[0m'
 
 # Print Current Java Version
@@ -29,6 +30,8 @@ cat << 'EOF'
 EOF
 
 echo -e "========================================================================================================"
-echo -e "${LBLUE}Welcome to HR! If you have any issues don't hesitate to contact us on discord at dsc.gg/hostingremade ${RESET_COLOR}"
+echo -e "${HALLOWEEN} Happy Halloween everyone!'Don'\''t' hesitate to contact us on Discord if you have any issues at dsc.gg/hostingremade ${RESET_COLOR}"
+# echo -e "${LBLUE}Welcome to HR! 'Don'\''t' hesitate to contact us on Discord if you have any issues at dsc.gg/hostingremade"
+echo -e "Special thanks to Oliver, Nathan for console messages ${RESET_COLOR}"
 echo -e "========================================================================================================"
 eval "${MODIFIED_STARTUP}"
