@@ -30,8 +30,8 @@ cat << 'EOF'
 EOF
 
 echo -e "========================================================================================================"
-echo -e "${ORANGE} Happy Halloween everyone! Please don't hesitate to contact us on Discord if you have any issues at dsc.gg/hostingremade ${RESET_COLOR}"
-#echo -e "${LBLUE}Welcome to HR! Please don't hesitate to contact us on Discord if you have any issues at dsc.gg/hostingremade ${RESET_COLOR}"
+#echo -e "${ORANGE} Happy Halloween everyone! Please don't hesitate to contact us on Discord if you have any issues at dsc.gg/hostingremade ${RESET_COLOR}"
+echo -e "${LBLUE}Welcome to HR! Please don't hesitate to contact us on Discord if you have any issues at dsc.gg/hostingremade ${RESET_COLOR}"
 echo -e "Special thanks to Oliver, Nathan, Astofu, Flowers, Noxitb, JasonSmith, Pew for console messages! ${RESET_COLOR}"
 echo -e "========================================================================================================"
 eval "${MODIFIED_STARTUP}"
