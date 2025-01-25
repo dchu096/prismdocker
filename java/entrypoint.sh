@@ -31,6 +31,6 @@ EOF
 
 echo -e "========================================================================================================"
 #echo -e "${ORANGE} Happy Halloween everyone! Please don't hesitate to contact us on Discord if you have any issues at dsc.gg/hostingremade ${RESET_COLOR}"
-echo -e "${LBLUE}Hey! Welcome to ${ORANGE}HostingRemade! ${LBLUE}Need help? Reach us on Discord: dsc.gg/hostingremade ${RESET_COLOR}"
+echo -e "${LBLUE}Hey! Welcome to ${ORANGE}HostingRemade${LBLUE}! Need help? Reach us on Discord: dsc.gg/hostingremade ${RESET_COLOR}"
 echo -e "========================================================================================================"
 eval "${MODIFIED_STARTUP}"
