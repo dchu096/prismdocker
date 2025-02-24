@@ -21,16 +21,15 @@ echo -e "STARTUP /home/container: ${MODIFIED_STARTUP}"
 # Run the Server
 # shellcheck disable=SC2086
 cat << 'EOF'
-    __  __           __  _             ____                           __   
-   / / / /___  _____/ /_(_)___  ____ _/ __ \___  ____ ___  ____ _____/ /__ 
-  / /_/ / __ \/ ___/ __/ / __ \/ __ `/ /_/ / _ \/ __ `__ \/ __ `/ __  / _ \
- / __  / /_/ (__  ) /_/ / / / / /_/ / _, _/  __/ / / / / / /_/ / /_/ /  __/
-/_/ /_/\____/____/\__/_/_/ /_/\__, /_/ |_|\___/_/ /_/ /_/\__,_/\__,_/\___/ 
-                             /____/                                         
+    ____       _                _   __          __         
+   / __ \_____(_)________ ___  / | / /___  ____/ /__  _____
+  / /_/ / ___/ / ___/ __ `__ \/  |/ / __ \/ __  / _ \/ ___/
+ / ____/ /  / (__  ) / / / / / /|  / /_/ / /_/ /  __(__  ) 
+/_/   /_/  /_/____/_/ /_/ /_/_/ |_/\____/\__,_/\___/____/  
 EOF
 
 echo -e "========================================================================================================"
 #echo -e "${ORANGE} Happy Halloween everyone! Please don't hesitate to contact us on Discord if you have any issues at dsc.gg/hostingremade ${RESET_COLOR}"
-echo -e "${LBLUE}Hey! Welcome to ${ORANGE}HostingRemade${LBLUE}! Need help? Reach us on Discord: dsc.gg/hostingremade ${RESET_COLOR}"
+echo -e "${LBLUE}Thankyou for choosing PrismNodes! Need help? Reach us on Discord: discord.gg/prismnodes ${RESET_COLOR}"
 echo -e "========================================================================================================"
 eval "${MODIFIED_STARTUP}"
