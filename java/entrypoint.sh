@@ -33,3 +33,4 @@ echo -e "=======================================================================
 echo -e "${LBLUE}Thankyou for choosing PrismNodes! Need help? Reach us on Discord: discord.gg/prismnodes ${RESET_COLOR}"
 echo -e "========================================================================================================"
 eval "${MODIFIED_STARTUP}"
+echo -e "${ORANGE}Remember to go tell valid hes a nice person <3"
